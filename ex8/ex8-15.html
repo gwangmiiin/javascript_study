@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event - click 이벤트 연결</title>
+    <script>
+        window.onload = function(){
+            var header = document.getElementById('myHeader');
+            var handler = function(){
+                this.style.color = 'red';
+                this.removeEventListner('click', handler); //한번 클릭하면 끝
+            }
+            header.addEventListener('click', handler);
+        };
+    </script>
+</head>
+
+<body>
+    <h1 id="myHeader">
+        Click
+    </h1>
+</body>
+
+</html>

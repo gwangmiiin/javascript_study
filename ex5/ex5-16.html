@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>함수 : 함수가 겹칠때</title>
+    <script>
+        /*윤씨가 만든 함수*/
+        //제곱을 구하는 함수  
+        function sqare(x) {
+            return x * x
+        }      
+        function pythagoras(width, hight) {
+            function sqare(x) {
+            return x * x
+        }  
+            return Math.sqrt(sqare(width) + sqare(hight));
+        }
+        
+        //피타고라스 함수를 호출
+        alert(pythagoras(3,4));
+
+        /* 연씨가 만든 함수 */
+        function sqare(width, hight, hypotenuse) {
+            if(width * width + hight * hight == hypotenuse * hypotenuse){
+                return true;
+            } else {
+                return false;
+            }
+        }
+        //함수가 겹칠때 작동이 안되는 것을 방지하지 위해 내부함수를 사용한다.
+    </script>
+</head>
+<body>   
+</body>
+</html>

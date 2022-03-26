@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<script>
+    $(document).ready(function(){
+        $('h3').css('backgroundColor','orange').filter(':even').css('color', 'white').end().filter(':odd').css('color', 'red')
+        //.end()를 사용하여 문서 객체 선택을 한 단계 뒤로 돌림.
+    });
+</script>
+<body>
+    <h3>Header - 0</h3>
+    <h3>Header - 1</h3>
+    <h3>Header - 2</h3>
+</body>
+</html>

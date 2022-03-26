@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM - Browser Object Model</title>
+    <script>
+        //윈도우가 로드될때
+        window.onload = function(){
+            //1초마다 함수 실행
+            var intervalID = setInterval(function(){
+                document.body.innerHTML += '<p>' + new Date() + '</p>'
+            },1000);
+            setTimeout(function(){
+                clearInterval(intervalID);
+            },5000);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

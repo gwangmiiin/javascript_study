@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event - this</title>
+    <script>
+        window.onload = function(){
+            document.getElementById('header').onclick = function(){
+                this.style.color = 'orange';
+                this.style.backgroundColor = 'red';
+                //자신의 스타일을 변경할 수 있음
+            };
+        };
+    </script>
+</head>
+<body>
+    <h1 id="header">
+        HEADER
+    </h1>
+</body>
+</html>

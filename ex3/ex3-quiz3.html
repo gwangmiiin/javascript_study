@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS기본 조건문 - if문 </title>
+    <script>
+        var inputKo = Number(prompt('국어성적을 입력하세요', '숫자'));
+        var inputEng = Number(prompt('영어성적을 입력하세요', '숫자'));
+        var inputMa = Number(prompt('수학성적을 입력하세요', '숫자'));
+        var total = inputKo + inputEng + inputMa;
+        var score = total / 3;
+        var result;
+        //조건문
+        if (score >= 90) {
+            result = "수";
+        } else if(score >= 80) {
+            result = "우";
+        } else if(score >= 70) {
+            result = "미";
+        } else if(score >= 60) {
+            result = "양";
+        } else {
+            result = "가";
+        }
+        alert( "총점 :" + total + "\n평균 : " + score + "\n결과 :" + result);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

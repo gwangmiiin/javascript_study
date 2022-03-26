@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<script>
+    $(document).ready(function(){
+        $('h1').each(function(){
+            if($(this).is('.select')){
+                $(this).css('backgroundColor',"orange")
+            }else{
+                $(this).css('backgroundColor','blue')
+            }
+        });
+    });
+</script>
+<body>
+    <h1 class="select">Header - 0</h1>
+    <h1>Header - 1</h1>
+    <h1 class="select">Header - 2</h1>
+    
+</body>
+</html>

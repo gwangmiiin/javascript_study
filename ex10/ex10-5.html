@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<script>
+    $(document).ready(function(){
+        $('h3').css('backgroundColor','orange');
+        $('h3:even').css('color', 'white')
+        $('h3:odd').css('color', 'red')
+    });
+    //체이닝 방식
+</script>
+<body>
+    <h3>Header - 0</h3>
+    <h3>Header - 1</h3>
+    <h3>Header - 2</h3>
+</body>
+</html>

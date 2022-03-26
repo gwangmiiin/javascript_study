@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            //변수선언
+            var array = [
+                {name : 'KGM', link: 'https://www.notion.so/c44164646bb4469d8a04a382b3527de5 '},
+                {name : 'Naver', link: 'https://www.naver.com'},
+                {name : 'Daum', link: 'https://www.Daum.com'},
+                {name : 'Google', link: 'https://www.google.com'}
+            ]
+            //$.each()메서드 사용
+            $.each(array,function(index, item){
+                var output = '';
+                output += '<a href="' + itrm.link +'">';
+                output += '<h1>' + item.name + '</h1>';
+                output += '</a>';
+                document.body.innerHTML += output;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    
+</body>
+
+</html>

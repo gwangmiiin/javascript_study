@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <style>
+
+    </style>
+    <script>
+        $(function () {
+            var object = {};
+            object.name = 'RintIanTta';
+            object.gender = 'Male';
+            object.part = 'Second Guitar';
+            //출력
+            var output = '';
+            $.each(object, function(key, item){
+                output += key + ' : ' +item + '\n';
+            });
+            alert(output);
+        });
+    </script>
+</head>
+
+<body>
+    
+</body>
+
+</html>

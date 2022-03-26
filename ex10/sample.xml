@@ -1,0 +1,14 @@
+<friends>
+   <friend>
+        <name>연하진</name>
+        <language>Ruby</language>
+   </friend>
+   <friend>
+        <name>윤명월</name>
+        <language>Basic</language>
+   </friend>
+   <friend>
+        <name>윤하린</name>
+        <language>C#</language>
+   </friend>
+</friends>

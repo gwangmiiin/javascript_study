@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <style>
+
+    </style>
+    <script>
+        $(function () {
+            var object = {name : 'RintIanTta'};
+            //$.extend()메서드 사용으로 객체 추가 가능 
+            $.extend(object,{
+                gender : 'Male',
+                part : 'Second Guitar',
+                test : 'test'
+            })         
+            //출력
+            var output = '';
+            $.each(object, function(key, item){
+                output += key + ' : ' +item + '\n';
+            });
+            alert(output);
+        });
+    </script>
+</head>
+
+<body>
+    
+</body>
+
+</html>

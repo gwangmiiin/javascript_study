@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>함수 return</title>
+    <script>
+        function returnTest() {
+            alert('문장A');
+            return;
+            alert('문장B');
+        }
+        //함수호출
+        var value = returnTest();
+        alert(value) 
+        alert(typeof(value) + ' : ' + value);
+        //문장A만 호출
+        //return에 아무런 값도 전달하지 않았기 때문에 undefined가 나옴 
+    </script>
+</head>
+<body>   
+</body>
+</html>
