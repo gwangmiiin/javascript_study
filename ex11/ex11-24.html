@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <style>
+        img{
+            width: 100px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('img').first().appendTo('body')
+        });
+    </script>
+</head>
+
+<body>
+    <img src="./img/Chrysanthemum.jpg" alt="">
+    <img src="./img/Desert.jpg" alt="">
+    <img src="./img/Hydrangeas.jpg" alt="">
+    <img src="./img/Jellyfish.jpg" alt="">
+    <img src="./img/Koala.jpg" alt="">
+</body>
+
+</html>

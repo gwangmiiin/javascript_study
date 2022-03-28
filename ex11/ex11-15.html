@@ -8,16 +8,19 @@
     <style>
     </style>
     <script>
-        $(document).ready(function(){
-            $('h1').css('color','red');
-        })
+        $(document).ready(function () {
+            //변수선언
+            $('div').html(function(index){
+                return '<h1>header - ' + index + '</h1>'
+            });
+        });
     </script>
 </head>
 
 <body>
-    <h1>Header - 0</h1>
-    <h1>Header - 1</h1>
-    <h1>Header - 2</h1>
+    <div></div>
+    <div></div>
+    <div></div>
 </body>
 
 </html>

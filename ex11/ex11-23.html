@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function(){
+            //변수선언
+            var content = [
+                {name : '김광민', region : '서울시 마포구'},
+                {name : '윤인성', region : '서울시 강서구'},
+                {name : '윤인하', region : '서울시 광진구'}
+            ];
+            //문서 객체를 추가
+            $('div').append(function(index){
+                var item = content[index];
+                var output = '';
+                output += '<h1>' + item.name + '</h1>';
+                output += '<h2>' + item.region + '</h2>';
+                return output;
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

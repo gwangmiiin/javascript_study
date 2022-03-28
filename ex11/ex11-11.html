@@ -9,7 +9,12 @@
     </style>
     <script>
         $(document).ready(function(){
-            $('h1').css('color','red');
+            //변수선언
+            var color = ['red', 'orange', 'purple'];
+            $('h1').css('color', function(index){
+                return color[index];
+                //함수처리 하여 값을 받아온것. 
+            })
         })
     </script>
 </head>

@@ -9,15 +9,17 @@
     </style>
     <script>
         $(document).ready(function(){
-            $('h1').css('color','red');
-        })
+            //변수선언
+            $('h1').first().remove();
+            //$('h1').eq(0).remove(); 과 동일
+            //지울때 사용 
+        });
     </script>
 </head>
 
 <body>
     <h1>Header - 0</h1>
     <h1>Header - 1</h1>
-    <h1>Header - 2</h1>
 </body>
 
 </html>
