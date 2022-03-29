@@ -12,16 +12,20 @@
     </style>
     <script>
         $(document).ready(function(){
-            $('div').append($('h1'))
+            //이벤트 연결
+            $('h1').bind('click', function(){
+                $(this).html(function(index,html){
+                    return html + '+';
+                });
+            });
         });
     </script>
 </head>
 
 <body>
-    <h1>HEADER</h1>
-    <hr/>
-    <div></div>
-    <hr/>
+    <h1>Header -0</h1>
+    <h1>Header -1</h1>
+    <h1>Header -2</h1>
 </body>
 
 </html>

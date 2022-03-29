@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-1.7.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            margin: 5px;
+            padding: 3px;
+            border: 3px solid black;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+          //이벤트 연결
+          $('div').click(function(){
+              //변수선언
+              var header = $('h1',this).text();
+              var paragraph = $('p',this).text();
+              alert(header + '\n' + paragraph);
+          });
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>Header1</h1>
+        <p>paragraph</p>
+    </div>
+    <div>
+        <h1>Header2</h1>
+        <p>paragraph</p>
+    </div>
+    <div>
+        <h1>Header3</h1>
+        <p>paragraph</p>
+    </div>
+</body>
+
+</html>
