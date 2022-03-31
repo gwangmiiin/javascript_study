@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-1.7.min.js"></script>
+    <script src="jquery-ui-1.8.16.custom.min.js"></script>
+    <style>
+        
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#text').keyup(function(){
+                $('#target').text($(this).val());
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <input id="text" type="text">
+    <h2 id="target"></h2>
+</body>
+
+</html>

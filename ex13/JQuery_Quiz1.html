@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-1.7.min.js"></script>
+    <script src="jquery-ui-1.8.16.custom.min.js"></script>
+    <style>
+        
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#button1').click(function(){
+                $('#target').hide();
+            });
+            $('#button2').click(function(){
+                $('#target').show();
+            });       
+        });
+    </script>
+</head>
+
+<body>
+    <p id="target">이것은 p요소 입니다</p>
+    <button id="button1">
+        감추기
+    </button>
+    <button id="button2">
+        보이기
+    </button>
+</body>
+
+</html>

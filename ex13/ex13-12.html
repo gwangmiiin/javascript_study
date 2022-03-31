@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-1.7.min.js"></script>
+    <script src="jquery-ui-1.8.16.custom.min.js"></script>
+    <style>
+        .revers {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('div').each(function (index) {
+                $('div').hover(function(){
+                    $(this).addClass('revers', 1000);
+                }, function(){
+                    $(this).removeClass('revers', 1000);
+                })
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>Lorem ipsum</h1>
+        <p>askfjsdkljfkldsjfkljdsklfjdsf</p>
+    </div>
+    <div>
+        <h1>Lorem ipsum</h1>
+        <p>askfjsdkljfkldsjfkljdsklfjdsf</p>
+    </div>
+    <div>
+        <h1>Lorem ipsum</h1>
+        <p>askfjsdkljfkldsjfkljdsklfjdsf</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-1.7.min.js"></script>
+    <script src="jquery-ui-1.8.16.custom.min.js"></script>
+    <style>
+        #jquery {
+            position: relative;
+            padding-left: 100px;
+        }
+    </style>
+    <script>
+        $(document).ready(function (event) {
+            $('#left').click(function () {
+                $('#jquery').animate({
+                    left: 0
+                });
+            });
+            $('#right').click(function (event) {
+                $('#jquery').animate({
+                    left: 100
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="left"> 왼쪽 </button>
+    <button id="right"> 오른쪽 </button>
+    <div>
+        <img src="JQuery.png" alt="" id="jquery">
+    </div>
+</body>
+
+</html>
