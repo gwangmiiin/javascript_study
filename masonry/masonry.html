@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+    <script src="http://code.jquery.com/jquery-1.7.js"></script>
+    <script src="jquery.masonry.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #525252;
+        }
+        .item{
+            float: left;
+            margin: 10px;
+            width: 150px;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+        .big {
+            width: 320px;
+        }
+        .big > img {
+            width: 320px;
+        }
+        .item > .bottom{
+            position: relative;
+            padding: 0 10px;
+            bottom: 18px;
+        }
+        .item > .bottom > img{
+            position: relative;
+            left: 21px;
+        }
+    </style>
+    <script>
+        $(window).load(function () {
+            $('#masonry_container').masonry({
+                itemSelector : '.item',
+                columnWidth : 170,
+                isAnimated : true
+            });
+            $('.item').live('click',function(){
+                $('#masonry_container').masonry('remove',$(this));
+                $('#masonry_container').masonry('reload');
+            });
+            $('#add_button').click(function(){
+                var $item = $('#masonry_container').children().clone();
+                $('#masonry_container').append($item).masonry('appended', $item, true)
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div id="add_button">
+        <img src="CJ.gif" alt="">
+    </div>
+    <div id="masonry_container">
+        <div class="item big">
+            <img src="cj1.jpg" alt="">
+            <div class="bottom">
+                <img src="top.png" alt="">
+                <p>대통령은 국가의 원수이며, 외국에 대하여 국가를 대표한다. 행정권은 대통령을 수반으로 하는 정부에 속한다. 국가는 전통문화의 계승·발전과 민족문화의 창달에 노력하여야 한다.</p>
+            </div>
+        </div>
+        <div class="item ">
+            <img src="cj2.jpg" alt="">
+            <div class="bottom">
+                <img src="top.png" alt="">
+                <p>국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다. 재판의 전심절차로서 행정심판을 할 수 있다. 행정심판의 절차는 법률로 정하되, 사법절차가 준용되어야 한다.</p>
+            </div>
+        </div>
+        <div class="item ">
+            <img src="cj12.jpg" alt="">
+            <div class="bottom">
+                <img src="top.png" alt="">
+                <p>군인은 현역을 면한 후가 아니면 국무총리로 임명될 수 없다. 모든 국민은 학문과 예술의 자유를 가진다. 국회가 재적의원 과반수의 찬성으로 계엄의 해제를 요구한 때에는 대통령은 이를 해제하여야 한다.</p>
+            </div>
+        </div>
+        <div class="item ">
+            <img src="cj4.jpg" alt="">
+            <div class="bottom">
+                <img src="top.png" alt="">
+                <p>사법권은 법관으로 구성된 법원에 속한다. 국무회의는 대통령·국무총리와 15인 이상 30인 이하의 국무위원으로 구성한다. 대통령은 국가의 독립·영토의 보전·국가의 계속성과 헌법을 수호할 책무를 진다.</p>
+            </div>
+        </div>
+        <div class="item ">
+            <img src="cj5.jpg" alt="">
+            <div class="bottom">
+                <img src="top.png" alt="">
+                <p>모든 국민은 법률이 정하는 바에 의하여 국방의 의무를 진다. 선거운동은 각급 선거관리위원회의 관리하에 법률이 정하는 범위안에서 하되, 균등한 기회가 보장되어야 한다.</p>
+            </div>
+        </div>
+        <div class="item ">
+            <img src="cj6.jpg" alt="">
+            <div class="bottom">
+                <img src="top.png" alt="">
+                <p>국가는 청원에 대하여 심사할 의무를 진다. 대한민국은 민주공화국이다. 국가는 대외무역을 육성하며, 이를 규제·조정할 수 있다. 모든 국민은 법률이 정하는 바에 의하여 납세의 의무를 진다.</p>
+            </div>
+        </div>
+        <div class="item big">
+            <img src="cj7.jpg" alt="">
+            <div class="bottom">
+                <img src="top.png" alt="">
+                <p>명령·규칙 또는 처분이 헌법이나 법률에 위반되는 여부가 재판의 전제가 된 경우에는 대법원은 이를 최종적으로 심사할 권한을 가진다. 국채를 모집하거나 예산외에 국가의 부담이 될 계약을 체결하려 할 때에는 정부는 미리 국회의 의결을 얻어야 한다.</p>
+            </div>
+        </div>
+        <div class="item ">
+            <img src="cj13.jpg" alt="">
+            <div class="bottom">
+                <img src="top.png" alt="">
+                <p>정당의 목적이나 활동이 민주적 기본질서에 위배될 때에는 정부는 헌법재판소에 그 해산을 제소할 수 있고, 정당은 헌법재판소의 심판에 의하여 해산된다.</p>
+            </div>
+        </div>
+        <div class="item ">
+            <img src="cj8.jpg" alt="">
+            <div class="bottom">
+                <img src="top.png" alt="">
+                <p>여자의 근로는 특별한 보호를 받으며, 고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다. 나는 헌법을 준수하고 국가를 보위하며 조국의 평화적 통일과 국민의 자유와 복리의 증진 및 민족문화의 창달에 노력하여 대통령으로서의 직책을 성실히 수행할 것을 국민 앞에 엄숙히 선서합니다.</p>
+            </div>
+        </div>
+        <div class="item ">
+            <img src="cj10.jpg" alt="">
+            <div class="bottom">
+                <img src="top.png" alt="">
+                <p>제1항의 해임건의는 국회재적의원 3분의 1 이상의 발의에 의하여 국회재적의원 과반수의 찬성이 있어야 한다. 대통령은 국무총리·국무위원·행정각부의 장 기타 법률이 정하는 공사의 직을 겸할 수 없다.</p>
+            </div>
+        </div>
+        <div class="item ">
+            <img src="cj11.jpg" alt="">
+            <div class="bottom">
+                <img src="top.png" alt="">
+                <p>국가는 법률이 정하는 바에 의하여 재외국민을 보호할 의무를 진다. 대통령의 선거에 관한 사항은 법률로 정한다. 헌법개정안이 제2항의 찬성을 얻은 때에는 헌법개정은 확정되며, 대통령은 즉시 이를 공포하여야 한다.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
